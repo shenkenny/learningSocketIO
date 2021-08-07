@@ -3,7 +3,7 @@ const socket = io();
 // Normal messages: User submits a form, and that
 // sends a 'client-message' message to the server.
 // The server then picks up that message and broadcasts it
-// back out on the "chat" event, which will send that
+// back out on the "chat" namespace, which will send that
 // message to everyone but the current user.
 const form = document.getElementById("form");
 const input = document.getElementById("input");
